@@ -37,8 +37,8 @@ export default class Header extends Component {
                     )
                   }
                </ul>
-               
-               <a href="https://main.d3uqk9wtm98zyo.amplifyapp.com/#portfolio"><button className="navigate">View Projects</button></a>
+
+               <a href="https://main.d3uqk9wtm98zyo.amplifyapp.com/#portfolio"><button className="button-85">View Projects</button></a>
             </div>
          </div>
 

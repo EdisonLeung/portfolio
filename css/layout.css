@@ -302,6 +302,9 @@ ul#nav li.current a { color: #F06000; }
    color: black;
 }
 
+.skills a :hover {
+   background-color: #00CCCC;
+}
 .work ul li::before {
    content: "▹";
    font-size: 20px;

@@ -34,7 +34,11 @@ export default class Header extends Component {
                   Projects
                 </a>
               </li>
-              {/* <li><a className="smoothscroll" href="#contact">Contact</a></li> */}
+              <li>
+                <a className="smoothscroll" href="#about">
+                  Contact
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -57,8 +61,8 @@ export default class Header extends Component {
                         <li key={item.name}>
                           <a href={item.url} target="_blank">
                             <i className={item.className}></i>
+                            <h6 style={{ color: "#fff" }}>{item.name}</h6>
                           </a>
-                          <h6 style={{ color: "#fff" }}>{item.name}</h6>
                         </li>
                       );
                     })}

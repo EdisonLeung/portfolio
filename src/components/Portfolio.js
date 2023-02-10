@@ -30,29 +30,29 @@ function Porfolio(props) {
                             <h3 className="project-title">{item.name}</h3>
 
                             <div className="project-description" style={{}}>
-                            <ScrollAnimation
-                  animateIn="animate__fadeInLeft"
-                  animateOnce={false}
-                  duration={0.5}
-                >
-                              {item.description
-                                .slice(
-                                  0,
-                                  readMore ? item.description.length : 2
-                                )
-                                .map((paragraph) => (
-                                  <p>{paragraph}</p>
-                                ))}
-                              {item.description.length > 2 && (
-                                <div
-                                  className="read-more"
-                                  onClick={() => setReadMore(!readMore)}
-                                >
-                                  <button>
-                                    {readMore ? "read less" : "read more"}
-                                  </button>
-                                </div>
-                              )}
+                              <ScrollAnimation
+                                animateIn="animate__fadeInLeft"
+                                animateOnce={false}
+                                duration={0.5}
+                              >
+                                {item.description
+                                  .slice(
+                                    0,
+                                    readMore ? item.description.length : 2
+                                  )
+                                  .map((paragraph) => (
+                                    <p>{paragraph}</p>
+                                  ))}
+                                {item.description.length > 2 && (
+                                  <div
+                                    className="read-more"
+                                    onClick={() => setReadMore(!readMore)}
+                                  >
+                                    <button>
+                                      {readMore ? "read less" : "read more"}
+                                    </button>
+                                  </div>
+                                )}
                               </ScrollAnimation>
                             </div>
                             <ul className="project-tech-list">
@@ -107,14 +107,14 @@ function Porfolio(props) {
               })}
           </ul>
           {/* <h1 style={{ marginTop: "10%", textAlign: "center" }}>
-              Other Noteworthy Projects
-            </h1>
-            <ul className="gg">
-              {resumeData.noteworthy_projects.map((item) => (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+            Other Noteworthy Projects
+          </h1>
+          <ul className="gg">
+            {resumeData.noteworthy_projects.map((item) => (
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <ScrollAnimation
+                  animateIn="animate__fadeInLeft"
+                  animateOnce={false}
                 >
                   <li>
                     <div className="project-inner">
@@ -147,9 +147,10 @@ function Porfolio(props) {
                       </div>
                     </div>
                   </li>
-                </a>
-              ))}
-            </ul> */}
+                </ScrollAnimation>
+              </a>
+            ))}
+          </ul> */}
         </div>
       </div>
     </section>

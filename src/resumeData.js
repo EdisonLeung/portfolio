@@ -208,7 +208,14 @@ let resumeData = {
       description:
         "Memory allocator that increases space utilization and decrease throughput using matrix transpose algorithms to optimize cache usage and reduce cache misses",
       link: "https://github.com/EdisonLeung/Dynamic-Memory-Allocator",
-      skills: ["C", "blocking", "Memory Allocation in C"],
+      skills: ["C", "gdb", "blocking", "Memory Allocation"],
+    },
+    {
+      name: "Dynamic Memory Allocator",
+      description:
+        "Memory allocator that increases space utilization and decrease throughput using matrix transpose algorithms to optimize cache usage and reduce cache misses",
+      link: "https://github.com/EdisonLeung/Dynamic-Memory-Allocator",
+      skills: ["C", "gdb", "blocking", "Memory Allocation"],
     },
   ],
 };

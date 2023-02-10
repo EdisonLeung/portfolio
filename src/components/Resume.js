@@ -5,6 +5,7 @@ import "animate.css/animate.min.css";
 export default function Resume(props) {
   let resumeData = props.resumeData;
   const [selectedComp, setSelectedComp] = useState(resumeData.work[0]);
+  const [animateExperience, setAnimateExperience] = useState("");
 
   return (
     <section id="resume">
@@ -83,7 +84,15 @@ export default function Resume(props) {
                       >
                         <button
                           key={item.CompanyName}
-                          onClick={() => setSelectedComp(item)}
+                          onClick={() => {
+                            setSelectedComp(item);
+                            if (animateExperience === "") {
+                              setAnimateExperience("animated animate__zoomIn")
+                              setTimeout(() => {
+                                setAnimateExperience("")
+                              }, 750);
+                            }
+                          }}
                         >
                           {item.CompanyName}
                         </button>{" "}
@@ -92,37 +101,38 @@ export default function Resume(props) {
                   })}
                 </ul>
               </div>
-              <div className="description">
-              <ScrollAnimation
-                          animateIn="animate__fadeInUp"
-                          animateOnce={false}
-                          duration={1}>
-                <div className="title">
-                  {selectedComp.CompanyName}
-                  <img
-                    src={selectedComp.logo}
-                    alt=""
-                    style={{
-                      position: "absolute",
-                      paddingRight: "4rem",
-                      right: 0,
-                      width: "auto",
-                      height: "5.5rem",
-                    }}
-                  />
-                </div>
+              <div className={`description ${animateExperience}`}>
+                <ScrollAnimation
+                  animateIn="animate__fadeInUp"
+                  animateOnce={false}
+                  duration={1}
+                >
+                  <div className="title">
+                    {selectedComp.CompanyName}
+                    <img
+                      src={selectedComp.logo}
+                      alt=""
+                      style={{
+                        position: "absolute",
+                        paddingRight: "4rem",
+                        right: 0,
+                        width: "auto",
+                        height: "5.5rem",
+                      }}
+                    />
+                  </div>
 
-                <div>{selectedComp.date}</div>
+                  <div>{selectedComp.date}</div>
 
-                <ul>
-                  {resumeData.work
-                    .filter(
-                      (item) => item.CompanyName === selectedComp.CompanyName
-                    )[0]
-                    .Achievements.map((achievement) => {
-                      return <li>{achievement}</li>;
-                    })}
-                </ul>
+                  <ul>
+                    {resumeData.work
+                      .filter(
+                        (item) => item.CompanyName === selectedComp.CompanyName
+                      )[0]
+                      .Achievements.map((achievement) => {
+                        return <li>{achievement}</li>;
+                      })}
+                  </ul>
                 </ScrollAnimation>
               </div>
             </div>

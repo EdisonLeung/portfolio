@@ -28,7 +28,13 @@ function Porfolio(props) {
                           <div>
                             <p className="project-overline">Featured Project</p>
                             <h3 className="project-title">{item.name}</h3>
+
                             <div className="project-description" style={{}}>
+                            <ScrollAnimation
+                  animateIn="animate__fadeInLeft"
+                  animateOnce={false}
+                  duration={0.5}
+                >
                               {item.description
                                 .slice(
                                   0,
@@ -47,6 +53,7 @@ function Porfolio(props) {
                                   </button>
                                 </div>
                               )}
+                              </ScrollAnimation>
                             </div>
                             <ul className="project-tech-list">
                               {item.skills.map((skill) => (

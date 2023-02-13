@@ -16,7 +16,7 @@ function Porfolio(props) {
             {resumeData.portfolio &&
               resumeData.portfolio.map((item) => {
                 return (
-                  <li style={{ marginBottom: "100px" }}>
+                  <li style={{ marginBottom: "50px" }}>
                     <ScrollAnimation
                       animateIn="animate__fadeInUp"
                       animateOnce={true}

@@ -53,7 +53,7 @@ export default function Resume(props) {
                           duration={1}
                         >
                           {item.courses.map((course) => {
-                            return <li style={{ fontSize: 12 }}> {course} </li>;
+                            return <a href={course.link} rel="noopener noreferrer" target="_blank"><li style={{ fontSize: 12 }}> {course.name} </li></a>;
                           })}
                         </ScrollAnimation>
                       </ul>

@@ -19,7 +19,7 @@ export default function Resume(props) {
             <span>My Resume</span>
           </h1>
           <div className="resume-container">
-            <div className="title">Softwares / Skills</div>
+            <div className="title">Programming Languages / Skills: </div>
             <ScrollAnimation
               animateIn="animate__fadeInUp"
               animateOnce={false}
@@ -32,8 +32,21 @@ export default function Resume(props) {
                   })}
               </ul>
             </ScrollAnimation>
+            <div className="title">Softwares / Technologies: </div>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              animateOnce={false}
+              duration={0.5}
+            >
+              <ul className="skills">
+                {resumeData.technologies &&
+                  resumeData.technologies.map((tech) => {
+                    return <li> {tech.skillname} </li>;
+                  })}
+              </ul>
+            </ScrollAnimation>
             <div className="title">Education</div>
-            {resumeData.education.map((item) => {
+            {resumeData.education.map((item, index) => {
               return (
                 <div className="description">
                   <div className="title">{item.UniversityName}</div>
@@ -41,11 +54,11 @@ export default function Resume(props) {
                   <div>{item.date}</div>
 
                   <ul>
-                    {item.info.map((data) => {
-                      return <li>{data}</li>;
+                    {item.info.map((data, index) => {
+                      return <li key={index}>{data}</li>;
                     })}
-                    <li>
-                      <b>Relevant Coursework:</b>
+                    <li key={index}>
+                      <b>Relevant Coursework (click to learn more):</b>
                       <ul className="skills">
                         <ScrollAnimation
                           animateIn="animate__fadeInUp"
@@ -53,13 +66,39 @@ export default function Resume(props) {
                           duration={1}
                         >
                           {item.courses.map((course) => {
-                            return <a href={course.link} rel="noopener noreferrer" target="_blank"><li style={{ fontSize: 12 }}> {course.name} </li></a>;
+                            return (
+                              <a
+                                href={course.link}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                <li key={course.name} style={{ fontSize: 12 }}>
+                                  {" "}
+                                  {course.name}{" "}
+                                </li>
+                              </a>
+                            );
                           })}
                         </ScrollAnimation>
                       </ul>
                     </li>
-                    <li>
-                      <b>Clubs and Organizations:</b> {item.clubs}
+                    <li key={item.clubs}>
+                      <b>Clubs and Organizations (click to learn more):</b>
+                      <ul>
+                        {item.clubs.map((club) => {
+                          return (
+                            <li key={club.link}>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href={club.link}
+                              >
+                                {club.name} 
+                              </a>
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </li>
                   </ul>
                 </div>
@@ -87,9 +126,9 @@ export default function Resume(props) {
                           onClick={() => {
                             setSelectedComp(item);
                             if (animateExperience === "") {
-                              setAnimateExperience("animated animate__zoomIn")
+                              setAnimateExperience("animated animate__zoomIn");
                               setTimeout(() => {
-                                setAnimateExperience("")
+                                setAnimateExperience("");
                               }, 750);
                             }
                           }}

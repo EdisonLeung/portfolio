@@ -3,7 +3,7 @@ let resumeData = {
   name: "Edison Leung | Software Developer",
   linkedinId: "Your LinkedIn Id",
   roleDescription:
-    "I love exploring and creating new technologies. I'm always trying to find something funny in any situation.",
+    "Computer Science major the University of Washington. I love exploring and creating new technologies. I'm always trying to find something funny in any situation.",
   socialLinks: [
     {
       name: "linkedin",
@@ -22,7 +22,7 @@ let resumeData = {
     },
   ],
   aboutme:
-    "Experienced in programming with various programming languages. Hands on experience with IOS and Android mobile app development. Seeking opportunities to pursue my passion in computer science and learn more about its applications",
+    "Experienced in programming with various programming languages. Hands on experience with IOS and Android mobile app development. Seeking opportunities to pursue my passion in computer science and explore its applications",
   email: "edleung03@gmail.com",
   number: "+1(206)681-7124",
   education: [
@@ -34,17 +34,41 @@ let resumeData = {
         "Major GPA: 3.87",
       ],
       courses: [
-        {name: "Software Design and Implementation", link: "https://courses.cs.washington.edu/courses/cse331/"},
-        {name: "Hardware Software Interface", link: "https://courses.cs.washington.edu/courses/cse351/"},
-        {name:"Systems and Software Tools", link: "https://courses.cs.washington.edu/courses/cse391/"},
-        {name:"Foundations of Computing", link: "https://courses.cs.washington.edu/courses/cse311/"},
-        {name:"Data Structures and Parallelism", link: "https://courses.cs.washington.edu/courses/cse332/"},
-        {name:"Data Management", link: "https://courses.cs.washington.edu/courses/cse344"},
-        {name:"Systems Programming and Operating Systems", link: "https://courses.cs.washington.edu/courses/cse333/"},
-        {name:"Calculus Series and Linear Algebra", link: ""},
+        {
+          name: "Software Design and Implementation",
+          link: "https://courses.cs.washington.edu/courses/cse331/",
+        },
+        {
+          name: "Hardware Software Interface",
+          link: "https://courses.cs.washington.edu/courses/cse351/",
+        },
+        {
+          name: "Systems and Software Tools",
+          link: "https://courses.cs.washington.edu/courses/cse391/",
+        },
+        {
+          name: "Foundations of Computing",
+          link: "https://courses.cs.washington.edu/courses/cse311/",
+        },
+        {
+          name: "Data Structures and Parallelism",
+          link: "https://courses.cs.washington.edu/courses/cse332/",
+        },
+        {
+          name: "Data Management",
+          link: "https://courses.cs.washington.edu/courses/cse344",
+        },
+        {
+          name: "Systems Programming and Operating Systems",
+          link: "https://courses.cs.washington.edu/courses/cse333/",
+        },
+        { name: "Calculus Series and Linear Algebra", link: "" },
       ],
-      clubs:
-        "Advanced Robotics (ARUW), Association for Computing Machinery (ACM), Asian American InterVarsity (AAIV)",
+      clubs: [
+        { name: "Advanced Robotics (ARUW)", link: "https://aruw.org/" },
+        { name: "Computing Community University of Washington", link: "https://com2.cs.washington.edu/" },
+        { name: "Asian American InterVarsity (AAIV)", link: "http://aaivuw.com/" },
+      ],
     },
   ],
   work: [
@@ -85,6 +109,41 @@ let resumeData = {
     },
   ],
   skillsDescription: "",
+  technologies: [
+    {
+      skillname: "React/React Native",
+    },
+    {
+      skillname: "Tailwind",
+    },
+    {
+      skillname: "Firebase",
+    },
+    {
+      skillname: "AWS Services",
+    },
+    {
+      skillname: "PostgreSQL",
+    },
+    {
+      skillname: "Git",
+    },
+    {
+      skillname: "Node.js",
+    },
+    {
+      skillname: "Linux",
+    },
+    {
+      skillname: "Spark Framework",
+    },
+    {
+      skillname: "Heroku",
+    },
+    {
+      skillname: "Google API",
+    },
+  ],
   skills: [
     {
       skillname: "Java",
@@ -99,34 +158,16 @@ let resumeData = {
       skillname: "Python",
     },
     {
-      skillname: "PostgreSQL",
-    },
-    {
       skillname: "C/C++",
     },
     {
       skillname: "C#",
     },
     {
-      skillname: "Git",
+      skillname: "SQL",
     },
     {
       skillname: "TypeScript",
-    },
-    {
-      skillname: "React/React Native",
-    },
-    {
-      skillname: "Tailwind",
-    },
-    {
-      skillname: "Node.js",
-    },
-    {
-      skillname: "Linux",
-    },
-    {
-      skillname: "Firebase",
     },
     {
       skillname: "Mobile App and Client-Server Development",
@@ -159,7 +200,12 @@ let resumeData = {
       ],
       link: "https://main.d3uqk9wtm98zyo.amplifyapp.com/CampusMap",
       gitLink: "https://github.com/EdisonLeung/Campus-Map",
-      textLinks: [{ link: "https://main.d3uqk9wtm98zyo.amplifyapp.com/CampusMap", text: "View Project" }],
+      textLinks: [
+        {
+          link: "https://main.d3uqk9wtm98zyo.amplifyapp.com/CampusMap",
+          text: "View Project",
+        },
+      ],
     },
     {
       name: "Imagetagger for Advanced Robotics at UW",
@@ -167,23 +213,30 @@ let resumeData = {
         "An Image Annotation Tool to effectively process over 30k+ images to feed into Machine Learning Model",
       ],
       imgurl: "images/portfolio/Imagetagger.jpg",
-      skills: ["React", "Tailwind", "PostgreSQL", "Prisma", "Git",],
+      skills: ["React", "Tailwind", "PostgreSQL", "Prisma", "Git"],
       link: "",
       textLinks: [],
     },
     {
       name: "Group Calendar Website",
-      description: ["Calendar schedule visualization tool to organize the schedules of multiple people or groups"],
+      description: [
+        "Calendar schedule visualization tool to organize the schedules of multiple people or groups",
+      ],
       imgurl: "images/portfolio/groupCalendar.jpg",
       skills: [
         "React",
         "Tailwind",
         "AWS Services (Console, S3, Amplify, Cognito, IAM)",
-        "Graphql"
+        "Graphql",
       ],
-      link:"https://main.d3q58t64yxo8f4.amplifyapp.com/",
+      link: "https://main.d3q58t64yxo8f4.amplifyapp.com/",
       gitLink: "https://github.com/EdisonLeung/group-calendar",
-      textLinks: [{text: "View Project", link: "https://main.d3q58t64yxo8f4.amplifyapp.com/"}]
+      textLinks: [
+        {
+          text: "View Project",
+          link: "https://main.d3q58t64yxo8f4.amplifyapp.com/",
+        },
+      ],
     },
     {
       name: "Robotics @ Cedar Park",
@@ -192,13 +245,23 @@ let resumeData = {
         "From 2020-2021 I was the software lead for the shooting division which was responsible for determining the ideal trajectory to hit a target given distance data.",
         "In order to determine the ideal trajectory, we used a cubic spline interpolation algorithm. This would take a distance (given by a Limelight) and interpolate the from a dataset of ideal trajectory data points to find the best trajetory for that distance.",
         "Some of my other responsibilities included: Programming essential motor functions, Building a SLAM Map to enable robot to know location on field, Using SLAM Map to develop an algorithm to assist robot driver to properly align robot with targets, and Managing Electrical and Software compatability",
-        "From 2018-2019 years on the team, my contributions helped team qualify for the FRC Worlds Competition in Houston where we became semi-finalists and finalists in 2018 and 2019 repsectively"
+        "From 2018-2019 years on the team, my contributions helped team qualify for the FRC Worlds Competition in Houston where we became semi-finalists and finalists in 2018 and 2019 repsectively",
       ],
       imgurl: "images/portfolio/CPR_Robot.jpg",
-      skills: ["Java", "SLAM Mapping", "WPILIB", "Git", "Vision Tracking", "Cubic Interpolation", "Matlab", "Hardware Software Interface"],
+      skills: [
+        "Java",
+        "SLAM Mapping",
+        "WPILIB",
+        "Git",
+        "Vision Tracking",
+        "Cubic Interpolation",
+        "Matlab",
+        "Hardware Software Interface",
+      ],
       link: "",
-      textLinks: [{ link: "https://www.cpr3663.com/", text: "Team Website" },
-      //  {link: "", text: "View Project"}
+      textLinks: [
+        { link: "https://www.cpr3663.com/", text: "Team Website" },
+        //  {link: "", text: "View Project"}
       ],
     },
   ],

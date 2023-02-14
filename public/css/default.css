@@ -1565,7 +1565,7 @@ svg,
   display: block;
 }
 
-.sidenav a :hover {
+.sidenav a:hover {
   color:#11abb0
 }
 .sidenav ul::before {

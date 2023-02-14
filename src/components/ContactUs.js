@@ -1,4 +1,5 @@
 import React, {  useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 export default function ContactUs(props) {
   let resumeData = props.resumeData;
   const [name, setName] = useState("");
@@ -25,7 +26,17 @@ export default function ContactUs(props) {
     <section id="contact">
       <div className="row">
         <div className="contact-form">
-          <form action="mailto:edleung03@gmail.com" className="contact-form" onSubmit={sendEmail}>
+        <ScrollAnimation
+                animateIn="animate__fadeInLeft"
+                animateOnce={false}
+                duration={0.5}
+              >
+                            <h1>
+              Please Feel Free to Contact Me @{" "}
+              <a href="mailto:edleung03@gmail.com?">{resumeData.email}</a>
+              {" "}or +1(206)681-7124
+            </h1>
+          {/* <form action="mailto:edleung03@gmail.com" className="contact-form" onSubmit={sendEmail}>
             <h1>
               Please Feel Free to Contact Me @{" "}
               <a href="mailto:edleung03@gmail.com?">{resumeData.email}</a>
@@ -62,7 +73,8 @@ export default function ContactUs(props) {
               type="submit"
               value="Send"
             />
-          </form>
+          </form> */}
+          </ScrollAnimation>
         </div>
       </div>
     </section>

@@ -14,25 +14,26 @@ function Porfolio(props) {
           </h1>
           <ul>
             {resumeData.portfolio &&
-              resumeData.portfolio.map((item) => {
+              resumeData.portfolio.map((item, index) => {
                 return (
-                  <li style={{ marginBottom: "50px" }}>
-                    <ScrollAnimation
-                      animateIn="animate__fadeInUp"
-                      animateOnce={true}
-                      duration={0.5}
-                      className="project-content"
-                    >
-                      <div className="projects-grid">
+                //   <ScrollAnimation
+                //   animateIn="animate__fadeInUp"
+                //   animateOnce={true}
+                //   duration={0.5}
+                // >
+                  <li key={index} style={{ marginBottom: "50px" }} className="projects-grid ">
+
+                      {/* <div className="projects-grid"> */}
                         <div className="project-content">
-                          <div>
+                          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true} style={{position:"relative", zIndex:2}}>
                             <p className="project-overline">Featured Project</p>
                             <h3 className="project-title">{item.name}</h3>
 
-                            <div className="project-description" style={{}}>
+                            <div className="project-description" style={{zIndex:5}}>
                               <ScrollAnimation
-                                animateIn="animate__fadeInLeft"
-                                animateOnce={false}
+                                animateIn={index % 2 === 0 ? "animate__fadeInLeft" : "animate__fadeInRight"}
+                                animateOnce={true}
+                                delay={250}
                                 duration={0.5}
                               >
                                 {item.description
@@ -80,9 +81,8 @@ function Porfolio(props) {
                                 </a>
                               ))}
                             </div>
-                          </div>
+                          </ScrollAnimation>
                         </div>
-
                         <div className="project-image portfolio-item">
                           <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
                             <div style={{ maxWidth: 700, display: "block" }}>
@@ -100,9 +100,10 @@ function Porfolio(props) {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </ScrollAnimation>
+                      {/* </div> */}
                   </li>
+                  // </ScrollAnimation>
+
                 );
               })}
           </ul>

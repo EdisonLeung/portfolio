@@ -1304,7 +1304,7 @@ Project CSS
   line-height: 2.2rem;
   text-align: left;
 
-  transition:all 0.25s ease-in;
+  transition: all 0.75s ease-in-out;
   overflow: hidden;
 }
 

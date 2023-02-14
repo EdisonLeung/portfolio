@@ -61,7 +61,7 @@ export default class Header extends Component {
                         <li key={item.name}>
                           <a href={item.url} rel="noopener noreferrer" target="_blank">
                             <i className={item.className}></i>
-                            <h6 style={{ color: "#fff" }}>{item.name}</h6>
+                            <h6>{item.name}</h6>
                           </a>
                         </li>
                       );

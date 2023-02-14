@@ -186,7 +186,7 @@ let resumeData = {
     {
       name: "UW Campus Map",
       description: [
-        "An application for finding the shortest path from one building to another at the University of Washington. This was part of a course project for CSE 331 (Software Design and Implementation) at the University of Washington",
+        "A web application for finding the shortest path from one building to another at the University of Washington. This applicaiton allows for the inclusion of lesser known campus paths that are not included in typical GPS applicaitons. This was part of a course project for CSE 331 (Software Design and Implementation) at the University of Washington",
       ],
       imgurl: "images/portfolio/CampusMap.jpg",
       skills: [
@@ -210,17 +210,22 @@ let resumeData = {
     {
       name: "Imagetagger for Advanced Robotics at UW",
       description: [
-        "An Image Annotation Tool to effectively process over 30k+ images to feed into Machine Learning Model",
+        "An Image Annotation Application to effectively process over 30k+ images to feed into Machine Learning Model used to identify different types of robots. This was a project during my time in Advanced Robotics at the University of Washington.",
+        "",
+        "This application provides a user friendly interface that allows people to annotate images and upload them to a machine learning model. The backend was developed using PostgreSQL and Prisma API while the frontend uses React, Tailwind, and Next.js "
+        
       ],
       imgurl: "images/portfolio/Imagetagger.jpg",
-      skills: ["React", "Tailwind", "PostgreSQL", "Prisma", "Git"],
+      skills: ["React", "Tailwind", "PostgreSQL", "Prisma", "Git", "Next.js"],
       link: "",
       textLinks: [],
     },
     {
       name: "Group Calendar Website",
       description: [
-        "Calendar schedule visualization tool to organize the schedules of multiple people or groups",
+        "Calendar schedule visualization tool to organize the schedules of multiple people or groups.",
+        "This web application allows users to create calendar groups where they and other people are able to synchronize all their schedules into one cohesive calendar. This is especially helpful when trying to coordinate when other people in the calendar group are free.",
+        "This was a personal project that allowed me to become familiar with various AWS services while also building a simple and useful web application."
       ],
       imgurl: "images/portfolio/groupCalendar.jpg",
       skills: [

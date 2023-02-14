@@ -1257,7 +1257,7 @@ Project CSS
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 .projects-grid:not(:last-of-type) {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .projects-grid:nth-of-type(2n + 1) .project-content {
   grid-column: 5 / -1;
@@ -1289,27 +1289,35 @@ Project CSS
   font-size: clamp(24px, 5vw, 28px);
 }
 
-.projects-grid .project-description {
+.projects-grid .description {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 4px;
+  background-color: #112240;
+}
+.projects-grid .project-description {
   position: relative;
   z-index: 2;
   padding: 25px;
   border-radius: 4px;
-  background-color: #112240;
   color: #a8b2d1;
   font-size: 20px;
   line-height: 2.2rem;
   text-align: left;
+
+  transition:all 0.25s ease-in;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.projects-grid .project-description .read-more {
-  margin-bottom: -20px;
-  margin-top: -25px;
+.projects-grid .read-more {
+  padding-right: 20px;
+  padding-bottom: 5px;
+  /* margin-bottom: -20px;
+  margin-top: -25px; */
   text-align: right;
 }
 
-.projects-grid .project-description button {
+.projects-grid .read-more button {
   all: revert;
   font-size: 17px;
   border-width: 0px;
@@ -1319,7 +1327,7 @@ Project CSS
   padding-right: 0;
 }
 
-.projects-grid .project-description button:hover {
+.projects-grid .read-more button:hover {
   cursor: pointer;
   color: #3d4145;
 }

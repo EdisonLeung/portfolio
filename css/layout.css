@@ -94,7 +94,10 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a :hover { 
+   transition: ease-in-out 0.2s;
+   color: #11ABB0;
+ }
 
 /* scrolldown link */
 header .scrolldown a {

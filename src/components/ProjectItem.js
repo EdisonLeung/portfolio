@@ -18,7 +18,7 @@ export default function ProjectItem(props) {
           <div className="description">
           <div
             className="project-description"
-            style={{ maxHeight: readMore ? "1000px" : "300px" }}
+            style={{ maxHeight: readMore ? "100rem" : "23rem" }}
           >
             <ScrollAnimation
               animateIn={

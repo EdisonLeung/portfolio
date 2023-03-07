@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 import ProjectItem from "./ProjectItem";
 
 function Porfolio(props) {
@@ -13,12 +14,10 @@ function Porfolio(props) {
           <ul>
             {resumeData.portfolio &&
               resumeData.portfolio.map((item, index) => {
-                return (
-                  <ProjectItem item={item} index={index} key={index}/>
-                );
+                return <ProjectItem item={item} index={index} key={index} />;
               })}
           </ul>
-          {/* <h1 style={{ marginTop: "10%", textAlign: "center" }}>
+          <h1 style={{ marginTop: "10%", textAlign: "center" }}>
             Other Noteworthy Projects
           </h1>
           <ul className="gg">
@@ -37,7 +36,7 @@ function Porfolio(props) {
                           </div>
                           <div className="project-links">
                             <a
-                              href={item.link}
+                              href={item.gitLink}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -50,7 +49,7 @@ function Porfolio(props) {
                           <p>{item.description}</p>
                         </div>
                       </div>
-                      <div style={{ display: "block" }}>
+                      <div>
                         <ul className="project-tech-list">
                           {item.skills.map((skill) => (
                             <li>{skill}</li>
@@ -58,11 +57,17 @@ function Porfolio(props) {
                         </ul>
                       </div>
                     </div>
+                    <div className="overlay">
+                      <div className="portfolio-item-meta">
+                        <h5>{item.name}</h5>
+                        <p>View Project</p>
+                      </div>
+                    </div>
                   </li>
                 </ScrollAnimation>
               </a>
             ))}
-          </ul> */}
+          </ul>
         </div>
       </div>
     </section>

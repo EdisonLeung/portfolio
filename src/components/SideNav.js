@@ -9,7 +9,7 @@ function SideNav(props) {
         <ScrollAnimation
           animateIn="animate__fadeInUp"
           animateOnce={true}
-          duration={1}
+          duration={2}
         >      <ul>
         {resumeData.socialLinks.map((item) => {
           return (

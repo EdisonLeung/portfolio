@@ -81,17 +81,23 @@ export default class Header extends Component {
           </nav>
           <div className="row banner">
             <div className="banner-text">
-              <h1 className="responsive-headline">
-                Hi, I'm {resumeData.name}.
-              </h1>
-              <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
-                {resumeData.roleDescription}
-              </h3>
+              <ScrollAnimation
+                animateIn="animate__zoomIn"
+                animateOnce={true}
+                duration={2}
+              >
+                <h1 className="responsive-headline">
+                  Hi, I'm {resumeData.name}.
+                </h1>
+                <h3>
+                  {resumeData.roleDescription}
+                </h3>
+              </ScrollAnimation>
               <hr />
               <ScrollAnimation
                 animateIn="animate__fadeInLeft"
-                animateOnce={false}
-                duration={0.5}
+                animateOnce={true}
+                duration={2}
               >
                 <ul className="social">
                   {resumeData.socialLinks &&

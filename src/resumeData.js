@@ -3,7 +3,7 @@ let resumeData = {
   name: "Edison Leung | Software Developer",
   linkedinId: "Your LinkedIn Id",
   roleDescription:
-    "Computer Science major the University of Washington. I love exploring and creating new technologies. I'm always trying to find something funny in any situation.",
+    "Computer Science major at the University of Washington. I love exploring and creating new technologies. I'm always trying to find something funny in any situation.",
   socialLinks: [
     {
       name: "linkedin",
@@ -143,6 +143,9 @@ let resumeData = {
     {
       skillname: "Google API",
     },
+    {
+      skillname: "OpenCV"
+    }
   ],
   skills: [
     {
@@ -221,29 +224,6 @@ let resumeData = {
       textLinks: [],
     },
     {
-      name: "Group Calendar Website",
-      description: [
-        "Calendar schedule visualization tool to organize the schedules of multiple people or groups.",
-        "This web application allows users to create calendar groups where they and other people are able to synchronize all their schedules into one cohesive calendar. This is especially helpful when trying to coordinate when other people in the calendar group are free.",
-        "This was a personal project that allowed me to become familiar with various AWS services while also building a simple and useful web application."
-      ],
-      imgurl: "images/portfolio/groupCalendar.jpg",
-      skills: [
-        "React",
-        "Tailwind",
-        "AWS Services (Console, S3, Amplify, Cognito, IAM)",
-        "Graphql",
-      ],
-      link: "https://main.d3q58t64yxo8f4.amplifyapp.com/",
-      gitLink: "https://github.com/EdisonLeung/group-calendar",
-      textLinks: [
-        {
-          text: "View Project",
-          link: "https://main.d3q58t64yxo8f4.amplifyapp.com/",
-        },
-      ],
-    },
-    {
       name: "Robotics @ Cedar Park",
       description: [
         "Designed a robot’s functions per FIRST Robotics Competition’s (FRC) yearly performance and budget requirements, working closely with mentors from Boeing and Microsoft",
@@ -275,15 +255,22 @@ let resumeData = {
       name: "Dynamic Memory Allocator",
       description:
         "Memory allocator that increases space utilization and decrease throughput using matrix transpose algorithms to optimize cache usage and reduce cache misses",
+      gitLink: "https://github.com/EdisonLeung/Dynamic-Memory-Allocator",
       link: "https://github.com/EdisonLeung/Dynamic-Memory-Allocator",
       skills: ["C", "gdb", "blocking", "Memory Allocation"],
     },
     {
-      name: "Dynamic Memory Allocator",
+      name: "Group Calendar Website",
       description:
-        "Memory allocator that increases space utilization and decrease throughput using matrix transpose algorithms to optimize cache usage and reduce cache misses",
-      link: "https://github.com/EdisonLeung/Dynamic-Memory-Allocator",
-      skills: ["C", "gdb", "blocking", "Memory Allocation"],
+        "Calendar schedule visualization tool to organize the schedules of multiple people or groups. This web application allows users to create calendar groups where they and other people are able to synchronize all their schedules into one cohesive calendar.",
+      skills: [
+        "AWS Console, S3, Amplify, Cognito, IAM",
+        "Graphql",
+        "React",
+        "Tailwind",
+      ],
+      link: "https://main.d3q58t64yxo8f4.amplifyapp.com/",
+      gitLink: "https://github.com/EdisonLeung/group-calendar",
     },
   ],
 };

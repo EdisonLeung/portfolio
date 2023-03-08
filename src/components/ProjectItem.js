@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default function ProjectItem(props) {
   let index = props.index;
   let item = props.item;
   const [readMore, setReadMore] = useState(false);
+
+  const [height, setHeight] = useState(0);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    setHeight(ref.current.clientHeight);
+  });
   return (
     <div className="projects-grid ">
       <div className="project-content">
@@ -16,30 +23,31 @@ export default function ProjectItem(props) {
           <p className="project-overline">Featured Project</p>
           <h3 className="project-title">{item.name}</h3>
           <div className="description">
-          <div
-            className="project-description"
-            style={{ maxHeight: readMore ? "100rem" : "23rem" }}
-          >
-            <ScrollAnimation
-              animateIn={
-                index % 2 === 0 ? "animate__fadeInLeft" : "animate__fadeInRight"
-              }
-              animateOnce={true}
-              delay={250}
-              duration={0.5}
+            <div
+              className="project-description"
+              ref={ref}
+              style={{ maxHeight: readMore ? "100rem" : "23rem" }}
             >
-              {item.description
-                // .slice(0, readMore ? item.description.length : 2)
-                .map((paragraph) => (
+              <ScrollAnimation
+                animateIn={
+                  index % 2 === 0
+                    ? "animate__fadeInLeft"
+                    : "animate__fadeInRight"
+                }
+                animateOnce={true}
+                delay={250}
+                duration={0.5}
+              >
+                {item.description.map((paragraph) => (
                   <p>{paragraph}</p>
                 ))}
-            </ScrollAnimation>
-          </div>
-          {item.description.length > 2 && (
-            <div className="read-more" onClick={() => setReadMore(!readMore)}>
-              <button>{readMore ? "read less" : "read more"}</button>
+              </ScrollAnimation>
             </div>
-          )}
+            {height >= 230 && (
+              <div className="read-more" onClick={() => setReadMore(!readMore)}>
+                <button>{readMore ? "read less" : "read more"}</button>
+              </div>
+            )}
           </div>
           <ul className="project-tech-list">
             {item.skills.map((skill) => (
@@ -47,13 +55,13 @@ export default function ProjectItem(props) {
             ))}
           </ul>
           <div className="project-links">
-            {item.gitLink !== undefined && (
+            {item.gitLink && (
               <a href={item.gitLink} target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-github"></i>
               </a>
             )}
 
-            {item.textLinks.map((link) => (
+            {item.textLinks && item.textLinks.map((link) => (
               <a href={link.link}>
                 <div style={{ fontSize: 15 }}>{link.text} &nbsp;</div>
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>

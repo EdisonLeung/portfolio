@@ -184,8 +184,27 @@ let resumeData = {
     {
       skillname: "Full-Stack Development",
     },
+    {
+      skillname: "Computer Vision"
+    }
   ],
   portfolio: [
+    {
+      name: "ArUco Marker Tracking @ Advanced Robotics at UW",
+      description: [
+        "Create custom ArUco markers and implmented marker detection program using OpenCV to allow robot to identify its exact location on the field. Wrote matrix transposition algorithm to convert camera data to usuable robot positional data.",
+        "With this positional data, the robots would then be able to build a SLAM map of the field and determine the best path to get to a certain location."
+      ],
+      imgurl: "images/portfolio/ArucoMarker.jpg",
+      skills: [
+        "OpenCV",
+        "python",
+        "AI Vision Tracking",
+        "SLAM Mapping",
+        "Vision Accuracy Testing"
+      ],
+      link: ""
+    },
     {
       name: "UW Campus Map",
       description: [
@@ -251,6 +270,12 @@ let resumeData = {
     },
   ],
   noteworthy_projects: [
+    {
+      name: "CSE Student Chat App",
+      description: "Created backend for chat application for Univeristy of Washington CSE Students to connect and chat. Course project for CSE 332 (Algorithms and Parallelism) at UW.",
+      link: "",
+      skills: ["Java", "Data Structures", "Networking", "JUnit Testing",]
+    },
     {
       name: "Dynamic Memory Allocator",
       description:

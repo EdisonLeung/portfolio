@@ -1568,7 +1568,7 @@ svg,
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
 }
 
@@ -1581,7 +1581,7 @@ svg,
   width: 1px;
   height: 150px;
   margin: 0px auto;
-  background-color: var(--light-slate);
+  background-color: black;
 }
 .sidenav ul::after {
   content: "";
@@ -1589,7 +1589,7 @@ svg,
   width: 1px;
   height: 150px;
   margin: 0px auto;
-  background-color: var(--light-slate);
+  background-color: black;
 }
 
 .resume-container {

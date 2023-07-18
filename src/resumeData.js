@@ -73,7 +73,20 @@ let resumeData = {
   ],
   work: [
     {
-      CompanyName: "CSE Course TA @ University of Washington",
+      CompanyName: "University of Washington - Department of Radiology",
+      role: "Full Stack Engineer", 
+      logo: "images/UW_Radiology.jpg",
+      date: "05/2022 - Current",
+      Achievements: [
+        "Created medical training website using NextJS and React for front-end and Firestore for the database",
+        "Created Database Schema and developed security rules using Firestore to optimize data usage and protect user information",
+        "Programmed interactive web simulations using TypeScript and React to allow users to simulate real-world medical situations",
+        "Programmed functions using Node.js to perform automated task such as routine database backups and sending automated emails",
+      ],
+    },
+    {
+      CompanyName: "University of Washington",
+      role: "CSE Course TA", 
       logo: "images/PaulAllenLogo.png",
       date: "09/2022 - Current",
       Achievements: [
@@ -83,7 +96,19 @@ let resumeData = {
       ],
     },
     {
-      CompanyName: "Software Engineer @ Solala",
+      CompanyName: "Advanced Robotics at the University of Washington",
+      role: "Computer Vision Software Engineer",
+      date: "09/2022 - Current",
+      logo: "images/ARUW.png",
+      Achievements: [
+        "Collaborated with a 60-person team to implement computer vision software in Python, which allows robots to accurately aim at opponents during the DJI RoboMaster competition", 
+        "Developed code using OpenCV so that our autonomous robot could recognize ArUco Markers on the field to determine its exact 3D position",
+        "Wrote unit tests to ensure code quality and reliability"
+      ]
+    },
+    {
+      CompanyName: "Solala",
+      role: "Software Engineer",
       date: "06/2022 - 09/2022",
       logo: "images/Solala.jpg",
       Achievements: [
@@ -96,7 +121,8 @@ let resumeData = {
       ],
     },
     {
-      CompanyName: "Coding Instructor @ ID Tech",
+      CompanyName: "ID Tech",
+      role: "Coding Instructor",
       date: "03/2021-08/2022",
       logo: "images/IDTech.jpg",
       Achievements: [
@@ -107,6 +133,7 @@ let resumeData = {
         "Developed and improved programming curriculum to better focus on understanding why code works rather than how it works",
       ],
     },
+
   ],
   skillsDescription: "",
   technologies: [

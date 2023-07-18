@@ -13,7 +13,7 @@ export default function ProjectItem(props) {
     setHeight(ref.current.clientHeight);
   });
   return (
-    <div className="projects-grid ">
+    <div className="projects-grid">
       <div className="project-content">
         <ScrollAnimation
           animateIn="animate__fadeInUp"
@@ -72,7 +72,7 @@ export default function ProjectItem(props) {
       </div>
       <div className="project-image portfolio-item">
         <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
-          <div style={{ maxWidth: 700, display: "block" }}>
+          <div style={{ display: "block" }}>
             <a href={item.link}>
               <div className="item-wrap">
                 <img src={item.imgurl} alt="" />

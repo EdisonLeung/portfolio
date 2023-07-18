@@ -106,7 +106,7 @@ export default function Resume(props) {
             })}
 
             <div className="title">Work Experience</div>
-            <div className="work-section">
+            <div className="work-section" style={{flexWrap: window.innerWidth < 720 ? "wrap" : "nowrap"}}>
               <div className="select">
                 <ul>
                   {resumeData.work.map((item) => {
@@ -133,7 +133,7 @@ export default function Resume(props) {
                             }
                           }}
                         >
-                          {item.CompanyName}
+                          {item.role}
                         </button>{" "}
                       </li>
                     );
@@ -147,8 +147,8 @@ export default function Resume(props) {
                   duration={1}
                 >
                   <div className="title">
-                    {selectedComp.CompanyName}
-                    <img
+                    {selectedComp.role} @ {selectedComp.CompanyName}
+                    {window.innerWidth > 720 && <img
                       src={selectedComp.logo}
                       alt=""
                       style={{
@@ -158,7 +158,7 @@ export default function Resume(props) {
                         width: "auto",
                         height: "5.5rem",
                       }}
-                    />
+                    />}
                   </div>
 
                   <div>{selectedComp.date}</div>

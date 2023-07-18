@@ -1,6 +1,4 @@
-import React, { Component, useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import ReactCardFlip from "react-card-flip";
+import React from "react";
 import ProjectItem from "./ProjectItem";
 import SmallProjectItem from "./SmallProjectItem";
 
@@ -8,7 +6,7 @@ function Porfolio(props) {
   let resumeData = props.resumeData;
   return (
     <section id="portfolio">
-      <div className="row">
+      <div className="row"> 
         <div className="twelve columns collapsed">
           <h1>
             <span>Some of My Projects</span>

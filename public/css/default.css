@@ -1160,6 +1160,8 @@ properly.
   --dark-navy: #020c1b;
   --navy: #0a192f;
   --light-navy: #112240;
+  /* --navy:var(--white); */
+  /* --light-navy:var(--blue); */
   --lightest-navy: #233554;
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --dark-slate: #495670;
@@ -1251,7 +1253,7 @@ Project CSS
   -webkit-box-align: center;
   align-items: center;
   border-radius: 6px;
-  background-color: #0a192f;
+  background-color: var(--navy);
   padding: 10px;
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
@@ -1284,21 +1286,21 @@ Project CSS
 
 .projects-grid .project-title {
   margin: 0px 0px 20px;
-  color: #ccd6f6;
+  color: var(--lightest-slate);
   font-size: clamp(24px, 5vw, 28px);
 }
 
 .projects-grid .description {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   border-radius: 4px;
-  background-color: #112240;
+  background-color: var(--light-navy);
 }
 .projects-grid .project-description {
   position: relative;
   z-index: 2;
-  padding: 25px 0px 25px 25px;
+  padding: 25px 25px 0px 25px;
   border-radius: 4px;
-  color: #a8b2d1;
+  color: var(--light-slate);
   font-size: 20px;
   line-height: 2.2rem;
   text-align: left;
@@ -1317,7 +1319,7 @@ Project CSS
   all: revert;
   font-size: 17px;
   border-width: 0px;
-  background-color: #112240;
+  background-color: var(--light-navy);
   color: #11abb0;
   padding-left: 0;
   padding-right: 0;
@@ -1351,7 +1353,7 @@ Project CSS
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 13px;
   white-space: nowrap;
-  background-color:#0a192f;
+  background-color:var(--navy);
   border-radius: 5px;
 }
 .projects-grid:nth-of-type(2n + 1) .project-links {
@@ -1568,7 +1570,7 @@ svg,
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
 }
 
@@ -1581,7 +1583,7 @@ svg,
   width: 1px;
   height: 150px;
   margin: 0px auto;
-  background-color: var(--light-slate);
+  background-color: black;
 }
 .sidenav ul::after {
   content: "";
@@ -1589,7 +1591,7 @@ svg,
   width: 1px;
   height: 150px;
   margin: 0px auto;
-  background-color: var(--light-slate);
+  background-color: black;
 }
 
 .resume-container {
@@ -1599,7 +1601,7 @@ svg,
   -webkit-box-align: center;
   align-items: center;
   border-radius: 6px;
-  background-color: #0a192f;
+  background-color: var(--navy);
   padding: 10px;
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
@@ -1668,13 +1670,7 @@ svg,
   padding-inline-start: 20px;
 }
 
-.bg-red {
-  background-color: #11abb0;
-}
 
-.bg-other {
-  background-color: #57bd84;
-}
 
 .path-0 {
   animation: pathAnim-0 4s;
@@ -1741,3 +1737,12 @@ svg,
     );
   }
 }
+
+/* .bg-red {
+  width: 100%;
+  background-color: #11abb0;
+}
+
+.bg-other {
+  background-color: #57bd84;
+} */

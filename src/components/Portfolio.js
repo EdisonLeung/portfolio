@@ -9,7 +9,7 @@ function Porfolio(props) {
       <div className="row"> 
         <div className="twelve columns collapsed">
           <h1>
-            <span>Some of My Projects</span>
+            <span className="title">Some of My Projects</span>
           </h1>
           <ul>
             {resumeData.portfolio &&

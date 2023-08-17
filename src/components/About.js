@@ -18,21 +18,32 @@ export default class About extends Component {
             <div className="nine columns main-col">
               <h2>About Me</h2>
               <p>{resumeData.aboutme}</p>
-
-              <div className="row">
-                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <div>
-                      email:{" "}
-                      <a href="mailto:edleung03@gmail.com?">
-                        {resumeData.email}
-                      </a>
-                    </div>
-                    <div>mobile: {resumeData.number}</div>
-                  </p>
-                </div>
-              </div>
+              <h2>Programming Languages: </h2>
+              <ScrollAnimation
+                animateIn="animate__fadeInUp"
+                animateOnce={false}
+                duration={0.5}
+              >
+                <ul className="skills">
+                  {resumeData.skills &&
+                    resumeData.skills.map((item) => {
+                      return <li> {item.skillname} </li>;
+                    })}
+                </ul>
+              </ScrollAnimation>
+              <h2>Softwares / Technologies: </h2>
+              <ScrollAnimation
+                animateIn="animate__fadeInUp"
+                animateOnce={false}
+                duration={0.5}
+              >
+                <ul className="skills">
+                  {resumeData.technologies &&
+                    resumeData.technologies.map((tech) => {
+                      return <li> {tech.skillname} </li>;
+                    })}
+                </ul>
+              </ScrollAnimation>
             </div>
           </div>
         </ScrollAnimation>

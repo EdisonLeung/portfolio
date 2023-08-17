@@ -13,7 +13,7 @@ export default function Header(props) {
           <a className="mobile-btn" href="#" title="Hide navigation">
             Hide navigation
           </a>
-          <ul id="nav" className="nav">
+          <ul id="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
                 Home

@@ -9,42 +9,16 @@ export default function Resume(props) {
 
   return (
     <section id="resume">
-      <div className="row skill">
+      <div className="row">
         <ScrollAnimation
           animateIn="animate__fadeInUp"
           animateOnce={true}
           duration={0.5}
         >
           <h1>
-            <span>My Resume</span>
+            <span className="title">My Resume</span>
           </h1>
           <div className="resume-container">
-            <div className="title">Programming Languages / Skills: </div>
-            <ScrollAnimation
-              animateIn="animate__fadeInUp"
-              animateOnce={false}
-              duration={0.5}
-            >
-              <ul className="skills">
-                {resumeData.skills &&
-                  resumeData.skills.map((item) => {
-                    return <li> {item.skillname} </li>;
-                  })}
-              </ul>
-            </ScrollAnimation>
-            <div className="title">Softwares / Technologies: </div>
-            <ScrollAnimation
-              animateIn="animate__fadeInUp"
-              animateOnce={false}
-              duration={0.5}
-            >
-              <ul className="skills">
-                {resumeData.technologies &&
-                  resumeData.technologies.map((tech) => {
-                    return <li> {tech.skillname} </li>;
-                  })}
-              </ul>
-            </ScrollAnimation>
             <div className="title">Education</div>
             {resumeData.education.map((item, index) => {
               return (
@@ -176,7 +150,7 @@ export default function Resume(props) {
               </div>
             </div>
           </div>
-        </ScrollAnimation>{" "}
+        </ScrollAnimation>
       </div>
     </section>
   );

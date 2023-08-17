@@ -30,18 +30,6 @@ body {
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
-/* header {
-  position: relative;
-  height: 800px;
-  min-height: 500px;
-  width: 100%; */
-/* background: #161415 url(../images/temp.jpg) no-repeat top center; */
-/* background-size: cover !important;
-  -webkit-background-size: cover !important;
-  text-align: center;
-  overflow: hidden;
-} */
-
 header {
   background: -moz-linear-gradient(
     45deg,
@@ -208,12 +196,6 @@ header::after {
   enable-background: new;
 }
 /* vertically center banner section */
-/* header:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-} */
 header .banner {
   display: inline-block;
   vertical-align: middle;
@@ -329,6 +311,7 @@ header .scrolldown a:hover {
   left: 0;
   top: 0;
   box-shadow: 1px 3px rgba(0, 0, 0, 1);
+  /* box-shadow: 0px 0px; */
 }
 .opaque {
   background-color: white;
@@ -378,12 +361,49 @@ ul#nav li.current a {
   color:#00cccc;
 }
 
+
+#sidenav {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  overflow-x: hidden;
+  padding: 5px;
+  bottom: 0;
+}
+
+#sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+#sidenav a:hover {
+  color: #11abb0;
+}
+#sidenav ul::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 150px;
+  margin: 0px auto;
+  background-color: black;
+}
+#sidenav ul::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 150px;
+  margin: 0px auto;
+  background-color: black;
+}
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: #2b2b2b;
+  background: rgb(225, 226, 232);
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
@@ -441,7 +461,9 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-  background: #fff;
+  /* background: #fff; */
+  background: rgb(205,0,113);
+  background: linear-gradient(90deg, rgba(205,0,113,1) 0%, rgba(49,211,247,1) 100%);
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
@@ -981,7 +1003,7 @@ call-to-action .button {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .flex-control-paging li a {
   width: 12px;

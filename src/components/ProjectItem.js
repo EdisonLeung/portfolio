@@ -24,7 +24,7 @@ export default function ProjectItem(props) {
           <h3 className="project-title">{item.name}</h3>
           <div className="description">
             <div
-              className="project-description"
+              className="glass project-description"
               ref={ref}
               style={{ maxHeight: readMore ? "100rem" : "23rem" }}
             >

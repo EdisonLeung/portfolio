@@ -284,8 +284,7 @@ h6 {
   font-size: 14px;
   line-height: 30px;
 }
-.subheader {
-}
+
 
 p {
   margin: 0 0 15px 0;
@@ -1557,41 +1556,12 @@ svg,
   line-height: 1.75;
 }
 
-.sidenav {
-  position: fixed;
-  overflow: hidden;
-  z-index: 1;
-  overflow-x: hidden;
-  padding: 5px;
-  bottom: 0;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #11abb0;
-}
-.sidenav ul::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 150px;
-  margin: 0px auto;
-  background-color: black;
-}
-.sidenav ul::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 150px;
-  margin: 0px auto;
-  background-color: black;
+.glass {
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(231, 231, 235, 0.73);
 }
 
 .resume-container {
@@ -1601,9 +1571,16 @@ svg,
   -webkit-box-align: center;
   align-items: center;
   border-radius: 6px;
-  background-color: var(--navy);
+  /* background-color: var(--navy); */
   padding: 10px;
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  /* From https://css.glass */
+  /* background: rgba(231, 231, 235, 0.45); */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(231, 231, 235, 0.73);
 }
 .resume-container .title {
   margin: 0px 0px 10px;
@@ -1738,6 +1715,10 @@ svg,
   }
 }
 
+.title {
+  font-size: 30px
+  /* background-color: #112240; */
+}
 /* .bg-red {
   width: 100%;
   background-color: #11abb0;

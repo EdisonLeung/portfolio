@@ -88,6 +88,10 @@
 
    /* mobile navigation
    -------------------------------------------------------------------- */
+   #sidenav {
+      display: none;
+   }
+
    #nav-wrap {
       font: 12px 'opensans-bold', sans-serif;
       background: transparent !important;
@@ -96,6 +100,7 @@
       position: fixed;
       top: 0;
       right: 0;
+      box-shadow: 0px 0px;
    }
    #nav-wrap > a {
 	   width: 48px;
@@ -174,6 +179,32 @@
       border: none;
    }  
 
+   .course-list {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+   .work-section {
+      flex-direction: column;
+   }
+
+   .projects-grid {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .mobile-glass {
+      background: rgba(255, 255, 255, 0.29);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+   }
+
+   .projects-grid .description {
+      box-shadow:none;
+      border-radius: 4px;
+      background: none;
+   }
 
    /* Header Styles
    -------------------------------------------------------------------- */

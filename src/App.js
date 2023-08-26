@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 
 import resumeData from "./resumeData";
+import Education from "./components/Education";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <SideNav resumeData={resumeData} />
       <Header resumeData={resumeData} />
       <About resumeData={resumeData} />
+      <Education resumeData={resumeData}/>
       <Resume resumeData={resumeData} />
       <Portfolio resumeData={resumeData} />
       <ContactUs resumeData={resumeData} />

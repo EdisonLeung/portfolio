@@ -9,83 +9,26 @@ export default function Resume(props) {
 
   return (
     <section id="resume">
-      <div className="row">
+      <h1 className="row">
+        <span className="title">Work Experience</span>
+      </h1>
+      <div className="row resume-container">
         <ScrollAnimation
           animateIn="animate__fadeInUp"
           animateOnce={true}
           duration={0.5}
         >
-          <h1>
-            <span className="title">My Resume</span>
-          </h1>
-          <div className="resume-container">
-            <div className="title">Education</div>
-            {resumeData.education.map((item, index) => {
-              return (
-                <div className="description">
-                  <div className="title">{item.UniversityName}</div>
-
-                  <div>{item.date}</div>
-
-                  <ul>
-                    {item.info.map((data, index) => {
-                      return <li key={index}>{data}</li>;
-                    })}
-                    <li key={index}>
-                      <b>Relevant Coursework (click to learn more):</b>
-                      <ul className="skills">
-                        <ScrollAnimation
-                          animateIn="animate__fadeInUp"
-                          animateOnce={false}
-                          duration={1}
-                        >
-                          {item.courses.map((course) => {
-                            return (
-                              <a
-                                href={course.link}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                <li key={course.name} style={{ fontSize: 12 }}>
-                                  {" "}
-                                  {course.name}{" "}
-                                </li>
-                              </a>
-                            );
-                          })}
-                        </ScrollAnimation>
-                      </ul>
-                    </li>
-                    <li key={item.clubs}>
-                      <b>Clubs and Organizations (click to learn more):</b>
-                      <ul>
-                        {item.clubs.map((club) => {
-                          return (
-                            <li key={club.link}>
-                              <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href={club.link}
-                              >
-                                {club.name} 
-                              </a>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              );
-            })}
-
-            <div className="title">Work Experience</div>
-            <div className="work-section" style={{flexWrap: window.innerWidth < 720 ? "wrap" : "nowrap"}}>
+          <div>
+            <div
+              className="work-section"
+              style={{ flexWrap: window.innerWidth < 720 ? "wrap" : "nowrap" }}
+            >
               <div className="select">
                 <ul>
-                  {resumeData.work.map((item) => {
+                  {resumeData.work.map((item, index) => {
                     return (
                       <li
+                        key={index}
                         className="smoothscroll"
                         style={{
                           borderLeft: `4px solid ${
@@ -108,7 +51,7 @@ export default function Resume(props) {
                           }}
                         >
                           {item.role}
-                        </button>{" "}
+                        </button>
                       </li>
                     );
                   })}
@@ -122,17 +65,19 @@ export default function Resume(props) {
                 >
                   <div className="title">
                     {selectedComp.role} @ {selectedComp.CompanyName}
-                    {window.innerWidth > 720 && <img
-                      src={selectedComp.logo}
-                      alt=""
-                      style={{
-                        position: "absolute",
-                        paddingRight: "4rem",
-                        right: 0,
-                        width: "auto",
-                        height: "5.5rem",
-                      }}
-                    />}
+                    {window.innerWidth > 720 && (
+                      <img
+                        src={selectedComp.logo}
+                        alt=""
+                        style={{
+                          position: "absolute",
+                          paddingRight: "4rem",
+                          right: 0,
+                          width: "auto",
+                          height: "5.5rem",
+                        }}
+                      />
+                    )}
                   </div>
 
                   <div>{selectedComp.date}</div>
@@ -142,8 +87,8 @@ export default function Resume(props) {
                       .filter(
                         (item) => item.CompanyName === selectedComp.CompanyName
                       )[0]
-                      .Achievements.map((achievement) => {
-                        return <li>{achievement}</li>;
+                      .Achievements.map((achievement, index) => {
+                        return <li key={index}>{achievement}</li>;
                       })}
                   </ul>
                 </ScrollAnimation>

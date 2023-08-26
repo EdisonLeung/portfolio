@@ -21,8 +21,8 @@ function Porfolio(props) {
             Other Noteworthy Projects
           </h1>
           <ul className="gg">
-            {resumeData.noteworthy_projects.map((item) => (
-              <SmallProjectItem item={item}/>
+            {resumeData.noteworthy_projects.map((item, index) => (
+              <SmallProjectItem item={item} key={index}/>
             ))}
           </ul>
         </div>

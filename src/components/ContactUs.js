@@ -1,27 +1,27 @@
-import React, {  useState } from "react";
+import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 export default function ContactUs(props) {
   let resumeData = props.resumeData;
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [subject, setSubject] = useState("");
+  // const [message, setMessage] = useState("");
 
-  function sendEmail() {
-    const templateID = "template_ncr71de";
-    const variables = {
-      from_name: name,
-      from_email: email,
-      message: message,
-      subject: subject
-    };
-    window.emailjs
-      .send("service_hoec3yn", templateID, variables)
-      .then((res) => {
-        alert("Message Sent");
-      })
-      .catch((err) => console.log(err));
-  }
+  // function sendEmail() {
+  //   const templateID = "template_ncr71de";
+  //   const variables = {
+  //     from_name: name,
+  //     from_email: email,
+  //     message: message,
+  //     subject: subject
+  //   };
+  //   window.emailjs
+  //     .send("service_hoec3yn", templateID, variables)
+  //     .then((res) => {
+  //       alert("Message Sent");
+  //     })
+  //     .catch((err) => console.log(err));
+  // }
   return (
     <section id="contact">
       <div className="row">
@@ -33,7 +33,7 @@ export default function ContactUs(props) {
               >
                             <h1>
               Please Feel Free to Contact Me @{" "}
-              <a href="mailto:edleung03@gmail.com?">{resumeData.email}</a>
+              <a style={{color: "#57cbff"}} href="mailto:edleung03@gmail.com?">{resumeData.email}</a>
               {" "}or +1(206)681-7124
             </h1>
           {/* <form action="mailto:edleung03@gmail.com" className="contact-form" onSubmit={sendEmail}>

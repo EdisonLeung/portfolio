@@ -19,12 +19,13 @@ export default function ProjectItem(props) {
           animateIn="animate__fadeInUp"
           animateOnce={true}
           style={{ position: "relative", zIndex: 2 }}
+          className="mobile-glass"
         >
           <p className="project-overline">Featured Project</p>
           <h3 className="project-title">{item.name}</h3>
-          <div className="description">
+          <div className="description glass">
             <div
-              className="glass project-description"
+              className="project-description"
               ref={ref}
               style={{ maxHeight: readMore ? "100rem" : "23rem" }}
             >
@@ -38,8 +39,8 @@ export default function ProjectItem(props) {
                 delay={250}
                 duration={0.5}
               >
-                {item.description.map((paragraph) => (
-                  <p>{paragraph}</p>
+                {item.description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
                 ))}
               </ScrollAnimation>
             </div>
@@ -49,9 +50,9 @@ export default function ProjectItem(props) {
               </div>
             )}
           </div>
-          <ul className="project-tech-list">
-            {item.skills.map((skill) => (
-              <li>{skill}</li>
+          <ul className="project-tech-list glass">
+            {item.skills.map((skill, index) => (
+              <li key={index}>{skill}</li>
             ))}
           </ul>
           <div className="project-links">
@@ -61,10 +62,10 @@ export default function ProjectItem(props) {
               </a>
             )}
 
-            {item.textLinks && item.textLinks.map((link) => (
-              <a href={link.link}>
+            {item.textLinks && item.textLinks.map((link, index) => (
+              <a key={index} href={link.link}>
                 <div style={{ fontSize: 15 }}>{link.text} &nbsp;</div>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             ))}
           </div>

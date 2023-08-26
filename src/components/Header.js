@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 export default function Header(props) {
   let resumeData = props.resumeData;
@@ -10,7 +10,7 @@ export default function Header(props) {
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
-          <a className="mobile-btn" href="#" title="Hide navigation">
+          <a className="mobile-btn" href="/#" title="Hide navigation">
             Hide navigation
           </a>
           <ul id="nav">
@@ -25,8 +25,13 @@ export default function Header(props) {
               </a>
             </li>
             <li>
+              <a className="smoothscroll" href="#education">
+                Education
+              </a>
+            </li>
+            <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                Experience
               </a>
             </li>
             <li>

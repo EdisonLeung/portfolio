@@ -3,7 +3,7 @@ let resumeData = {
   name: "Edison Leung | Software Developer",
   linkedinId: "Your LinkedIn Id",
   roleDescription:
-    "Computer Science major at the University of Washington. I love exploring and creating new technologies. I'm always trying to find something funny in any situation.",
+    "Computer Science major at the University of Washington. I love exploring and creating new technologies.",
   socialLinks: [
     {
       name: "linkedin",
@@ -27,7 +27,7 @@ let resumeData = {
   number: "+1(206)681-7124",
   education: [
     {
-      UniversityName: "B.S. of Computer Science @ University of Washington",
+      UniversityName: "B.S. of Computer Science @ The University of Washington",
       date: "Expected Graduation: 12/2024",
       info: [
         "Pursuing B.S. in Computer Science from Paul G. Allen Center for Computer Science and Engineering",
@@ -43,6 +43,10 @@ let resumeData = {
           link: "https://courses.cs.washington.edu/courses/cse351/",
         },
         {
+          name: "Operating Systems and Systems Programming",
+          link: "http://courses.cs.washington.edu/courses/cse333/"
+        },
+        {
           name: "Systems and Software Tools",
           link: "https://courses.cs.washington.edu/courses/cse391/",
         },
@@ -53,6 +57,14 @@ let resumeData = {
         {
           name: "Data Structures and Parallelism",
           link: "https://courses.cs.washington.edu/courses/cse332/",
+        },
+        {
+          name: "Algorithms",
+          link: "http://courses.cs.washington.edu/courses/cse421/"
+        },
+        {
+          name: "Machine Learning",
+          link: "http://courses.cs.washington.edu/courses/cse446/"
         },
         {
           name: "Data Management",
@@ -147,6 +159,12 @@ let resumeData = {
       skillname: "Firebase",
     },
     {
+      skillname: "Firestore"
+    },
+    {
+      skillname: "Azure"
+    },
+    {
       skillname: "AWS Services",
     },
     {
@@ -154,9 +172,6 @@ let resumeData = {
     },
     {
       skillname: "Git",
-    },
-    {
-      skillname: "Node.js",
     },
     {
       skillname: "Linux",
@@ -191,29 +206,17 @@ let resumeData = {
       skillname: "C/C++",
     },
     {
-      skillname: "C#",
+      skillname: "SQL",
     },
     {
-      skillname: "SQL",
+      skillname: "NoSQL"
     },
     {
       skillname: "TypeScript",
     },
     {
-      skillname: "Mobile App and Client-Server Development",
+      skillname: "Node.js",
     },
-    {
-      skillname: "Database Management",
-    },
-    {
-      skillname: "Object Oriented Design",
-    },
-    {
-      skillname: "Full-Stack Development",
-    },
-    {
-      skillname: "Computer Vision"
-    }
   ],
   portfolio: [
     {

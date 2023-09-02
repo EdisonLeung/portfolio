@@ -533,12 +533,6 @@ ul#nav li.current a {
 
 #resume {
   background: rgb(225, 226, 232);
-  /* background: rgb(205, 0, 113);
-  background: linear-gradient(
-    90deg,
-    rgba(205, 0, 113, 1) 0%,
-    rgba(49, 211, 247, 1) 100%
-  ); */
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;

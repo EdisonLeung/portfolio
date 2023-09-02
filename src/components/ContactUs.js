@@ -33,7 +33,7 @@ export default function ContactUs(props) {
               >
                             <h1>
               Please Feel Free to Contact Me @{" "}
-              <a style={{color: "#57cbff"}} href="mailto:edleung03@gmail.com?">{resumeData.email}</a>
+              <a style={{color: "#57cbff"}} href="mailto:edisonleung03@gmail.com?">{resumeData.email}</a>
               {" "}or +1(206)681-7124
             </h1>
           {/* <form action="mailto:edleung03@gmail.com" className="contact-form" onSubmit={sendEmail}>

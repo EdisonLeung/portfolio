@@ -1,5 +1,4 @@
 let resumeData = {
-  imagebaseurl: "https://rbhatia46.github.io/",
   name: "Edison Leung | Software Developer",
   linkedinId: "Your LinkedIn Id",
   roleDescription:
@@ -23,7 +22,7 @@ let resumeData = {
   ],
   aboutme:
     "Experienced in programming with various programming languages. Hands on experience with IOS and Android mobile app development. Seeking opportunities to pursue my passion in computer science and explore its applications",
-  email: "edleung03@gmail.com",
+  email: "edisonleung03@gmail.com",
   number: "+1(206)681-7124",
   education: [
     {
@@ -95,6 +94,16 @@ let resumeData = {
         "Programmed interactive web simulations using TypeScript and React to allow users to simulate real-world medical situations",
         "Programmed functions using Node.js to perform automated task such as routine database backups and sending automated emails",
       ],
+    },
+    {
+      CompanyName: "Molecular Information Systems Lab",
+      role: "Machine Learning Research Assistant",
+      logo: "images/misl-logo.svg",
+      date: "03/2023 - Current",
+      Achievements: [
+        "Collaborated with scientists and researchers from Microsoft Research and UW to explore the intersections and application of information technology in molecular biology",
+        "Used PyTorch Geometric Model to develop a machine-learning model that could recognize different DNA Kmer strands use pattern recognition to predict their barcode features from DNA"
+      ]
     },
     {
       CompanyName: "University of Washington",

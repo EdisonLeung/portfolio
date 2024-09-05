@@ -34,16 +34,28 @@ let resumeData = {
       ],
       courses: [
         {
+          name: "Distributed Systems",
+          link: "https://courses.cs.washington.edu/courses/cse452/",
+        },
+        {
+          name: "Operating Systems",
+          link: "https://courses.cs.washington.edu/courses/cse451/"
+        },
+        {
+          name: "Computer Security",
+          link: "https://courses.cs.washington.edu/courses/cse484/"
+        },
+        {
+          name: "Artificial Intelligence",
+          link: "https://courses.cs.washington.edu/courses/cse473/"
+        },
+        {
           name: "Software Design and Implementation",
           link: "https://courses.cs.washington.edu/courses/cse331/",
         },
         {
           name: "Hardware Software Interface",
           link: "https://courses.cs.washington.edu/courses/cse351/",
-        },
-        {
-          name: "Operating Systems and Systems Programming",
-          link: "http://courses.cs.washington.edu/courses/cse333/"
         },
         {
           name: "Systems and Software Tools",
@@ -66,8 +78,8 @@ let resumeData = {
           link: "http://courses.cs.washington.edu/courses/cse446/"
         },
         {
-          name: "Data Management",
-          link: "https://courses.cs.washington.edu/courses/cse344",
+          name: "Databases",
+          link: "https://courses.cs.washington.edu/courses/cse444",
         },
         {
           name: "Systems Programming and Operating Systems",
@@ -84,26 +96,41 @@ let resumeData = {
   ],
   work: [
     {
+      CompanyName: "Amazon Web Services",
+      role: "Software Dev Engineer Intern",
+      logo: "images/aws.png",
+      date: "06/2024 - Current",
+      Achievements: [
+        "Designed, implemented, and tested optimization solution that reduced latency of a cross region resource data sync by over 400%",
+        "Reduced monthly infrastructure usage cost by over $25k per month by optimizing AWS resources used in cross region replication",
+        "Used Java, AWS Simple Notification Service (SNS), Lambda, SQS, DynamoDB, and Cloud Formation to implement optimization path for data replication",
+        "Fixed existing Canary and Integration tests to ensure smooth deployment into production pipeline",
+        "Simplified code in existing complex architecture by batching and reducing API requests"
+      ]
+    },
+    {
+      CompanyName: "Direqt Inc.",
+      role: "Software Development Engineer",
+      logo: "images/direqt.jpg",
+      date: "09/2023 - 06/2024",
+      Achievements: [
+        "Added chatbot API support to Instagram and Facebook Messenger platform by integrating Meta Graph API in existing codebase",
+        "Integrated Microsoft Ads services into chatbot workflow through the use of Bing Ads API",
+        "Designed CRUD security protocols for database models to prevent malicious users from accessing or modifying user data",
+        "Used Angular and Vue.js to create console page UI to allow users to connect chatbots to different messaging platforms"
+      ]
+    },
+    {
       CompanyName: "University of Washington - Department of Radiology",
       role: "Full Stack Engineer", 
       logo: "images/UW_Radiology.jpg",
-      date: "05/2022 - Current",
+      date: "05/2023 - 06/2023",
       Achievements: [
         "Created medical training website using NextJS and React for front-end and Firestore for the database",
         "Created Database Schema and developed security rules using Firestore to optimize data usage and protect user information",
         "Programmed interactive web simulations using TypeScript and React to allow users to simulate real-world medical situations",
         "Programmed functions using Node.js to perform automated task such as routine database backups and sending automated emails",
       ],
-    },
-    {
-      CompanyName: "Molecular Information Systems Lab",
-      role: "Machine Learning Research Assistant",
-      logo: "images/misl-logo.svg",
-      date: "03/2023 - Current",
-      Achievements: [
-        "Collaborated with scientists and researchers from Microsoft Research and UW to explore the intersections and application of information technology in molecular biology",
-        "Used PyTorch Geometric Model to develop a machine-learning model that could recognize different DNA Kmer strands use pattern recognition to predict their barcode features from DNA"
-      ]
     },
     {
       CompanyName: "University of Washington",
@@ -140,21 +167,7 @@ let resumeData = {
         "Designed and created user friendly interface using CSS and React Native components",
         "Optimized sorting algorithm to organize user data efficiently",
       ],
-    },
-    {
-      CompanyName: "ID Tech",
-      role: "Coding Instructor",
-      date: "03/2021-08/2022",
-      logo: "images/IDTech.jpg",
-      Achievements: [
-        "Taught object-oriented design and how to apply it in Java and C#",
-        "Taught game design principles through 3D game creation using Unity and API usage and integration through Minecraft modding",
-        "Developed game components for client-server interface",
-        "Programmed using Lua to develop and publish online games on Roblox",
-        "Developed and improved programming curriculum to better focus on understanding why code works rather than how it works",
-      ],
-    },
-
+    }
   ],
   skillsDescription: "",
   technologies: [
@@ -174,7 +187,7 @@ let resumeData = {
       skillname: "Azure"
     },
     {
-      skillname: "AWS Services",
+      skillname: "AWS Services (Lambda, SNS, SQS, S3, Cloud Formation)",
     },
     {
       skillname: "PostgreSQL",

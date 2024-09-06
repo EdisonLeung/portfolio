@@ -26,7 +26,8 @@ export default function Resume(props) {
           backgroundImage:
             window.innerWidth < 767 ? `url(${selectedComp.logo})` : "",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
+          backgroundSize: "contain",
+          backgroundPosition: "center"
         }}
       >
         <ScrollAnimation

@@ -27,10 +27,9 @@ let resumeData = {
   education: [
     {
       UniversityName: "B.S. of Computer Science @ The University of Washington",
-      date: "Expected Graduation: 12/2024",
+      date: "09/2021 - 06/2025",
       info: [
-        "Pursuing B.S. in Computer Science from Paul G. Allen Center for Computer Science and Engineering",
-        "Major GPA: 3.87",
+        "B.S. in Computer Science from Paul G. Allen Center for Computer Science and Engineering",
       ],
       courses: [
         {
@@ -96,10 +95,22 @@ let resumeData = {
   ],
   work: [
     {
-      CompanyName: "Amazon Web Services",
-      role: "Software Dev Engineer Intern",
+      CompanyName: "AWS - CloudTrail",
+      role: "Software Development Engineer I",
       logo: "images/aws.png",
-      date: "06/2024 - Current",
+      date: "08/2025 - Current",
+      Achievements: [
+        "Collaborated with various teams to deliver CloudTrail Data Event Insights feature, enabling customers to detect and respond to unusual API call and error-rate activity in their data plane events",
+        "Built and scaled billing infrastructure for Data Events to ensure accurate, usage-based customer billing, supporting throughput of 2M+ transactions per second",
+        "Implemented end-to-end canary testing for Data Events to provide service health visibility and ensure customers received accurate data event insights",
+        "Identified and closed automation gaps in the CloudTrail Insights region expansion process, eliminating 2+ weeks of manual engineering effort per region deployment",
+      ],
+    },
+    {
+      CompanyName: "AWS - Systems Manager",
+      role: "Software Dev Intern",
+      logo: "images/aws.png",
+      date: "06/2024 - 06/2024",
       Achievements: [
         "Designed, implemented, and tested optimization solution that reduced latency of a cross region resource data sync by over 400%",
         "Reduced monthly infrastructure usage cost by over $25k per month by optimizing AWS resources used in cross region replication",
@@ -112,7 +123,7 @@ let resumeData = {
       CompanyName: "Direqt Inc.",
       role: "Software Development Engineer",
       logo: "images/direqt.jpg",
-      date: "09/2023 - 06/2024",
+      date: "09/2023 - 06/2024, 09/2024 - 06/2025",
       Achievements: [
         "Added chatbot API support to Instagram and Facebook Messenger platform by integrating Meta Graph API in existing codebase",
         "Integrated Microsoft Ads services into chatbot workflow through the use of Bing Ads API",
@@ -143,31 +154,31 @@ let resumeData = {
         "Held office hours and led additional optional lecture sessions to help students better understand lecture material",
       ],
     },
-    {
-      CompanyName: "Advanced Robotics at the University of Washington",
-      role: "Computer Vision Software Engineer",
-      date: "09/2022 - Current",
-      logo: "images/ARUW.png",
-      Achievements: [
-        "Collaborated with a 60-person team to implement computer vision software in Python, which allows robots to accurately aim at opponents during the DJI RoboMaster competition", 
-        "Developed code using OpenCV so that our autonomous robot could recognize ArUco Markers on the field to determine its exact 3D position",
-        "Wrote unit tests to ensure code quality and reliability"
-      ]
-    },
-    {
-      CompanyName: "Solala",
-      role: "Software Engineer",
-      date: "06/2022 - 09/2022",
-      logo: "images/Solala.jpg",
-      Achievements: [
-        "Full-Stack developer for website, IOS, and Android mobile app. Used expo for easy mobile app integration",
-        "Worked on client-server development and created database responsible for storing and retrieving user information using firebase",
-        "Used React Native and JavaScript for common UI and code reuse between web, IOS, and Android platforms",
-        "Programmed UI components such as a task manager, calendar, reminders tab, and navigation manager",
-        "Designed and created user friendly interface using CSS and React Native components",
-        "Optimized sorting algorithm to organize user data efficiently",
-      ],
-    }
+    // {
+    //   CompanyName: "Advanced Robotics at the University of Washington",
+    //   role: "Computer Vision Software Engineer",
+    //   date: "09/2022 - Current",
+    //   logo: "images/ARUW.png",
+    //   Achievements: [
+    //     "Collaborated with a 60-person team to implement computer vision software in Python, which allows robots to accurately aim at opponents during the DJI RoboMaster competition", 
+    //     "Developed code using OpenCV so that our autonomous robot could recognize ArUco Markers on the field to determine its exact 3D position",
+    //     "Wrote unit tests to ensure code quality and reliability"
+    //   ]
+    // },
+    // {
+    //   CompanyName: "Solala",
+    //   role: "Software Engineer",
+    //   date: "06/2022 - 09/2022",
+    //   logo: "images/Solala.jpg",
+    //   Achievements: [
+    //     "Full-Stack developer for website, IOS, and Android mobile app. Used expo for easy mobile app integration",
+    //     "Worked on client-server development and created database responsible for storing and retrieving user information using firebase",
+    //     "Used React Native and JavaScript for common UI and code reuse between web, IOS, and Android platforms",
+    //     "Programmed UI components such as a task manager, calendar, reminders tab, and navigation manager",
+    //     "Designed and created user friendly interface using CSS and React Native components",
+    //     "Optimized sorting algorithm to organize user data efficiently",
+    //   ],
+    // }
   ],
   skillsDescription: "",
   technologies: [
